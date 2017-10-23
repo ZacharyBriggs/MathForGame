@@ -1,0 +1,11 @@
+﻿  Main.cpp
+  Bitwise.cpp
+  Generating Code...
+Main.obj : error LNK2005: "public: __thiscall Bitwise::Bitwise(void)" (??0Bitwise@@QAE@XZ) already defined in Bitwise.obj
+Main.obj : error LNK2005: "public: int __thiscall Bitwise::AndOperator(int,int)" (?AndOperator@Bitwise@@QAEHHH@Z) already defined in Bitwise.obj
+Main.obj : error LNK2005: "public: int __thiscall Bitwise::LeftShift(int,int)" (?LeftShift@Bitwise@@QAEHHH@Z) already defined in Bitwise.obj
+Main.obj : error LNK2005: "public: int __thiscall Bitwise::NotOperator(int)" (?NotOperator@Bitwise@@QAEHH@Z) already defined in Bitwise.obj
+Main.obj : error LNK2005: "public: int __thiscall Bitwise::OrOperator(int,int)" (?OrOperator@Bitwise@@QAEHHH@Z) already defined in Bitwise.obj
+Main.obj : error LNK2005: "public: int __thiscall Bitwise::RightShift(int,int)" (?RightShift@Bitwise@@QAEHHH@Z) already defined in Bitwise.obj
+Main.obj : error LNK2005: "public: int __thiscall Bitwise::XOrOperator(int,int)" (?XOrOperator@Bitwise@@QAEHHH@Z) already defined in Bitwise.obj
+C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\Debug\Binary.exe : fatal error LNK1169: one or more multiply defined symbols found
