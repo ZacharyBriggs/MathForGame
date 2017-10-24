@@ -1,5 +1,5 @@
 #include "Vector3.h"
-#include <iostream>
+#include <math.h>
 Vector3::Vector3()
 {
 }
