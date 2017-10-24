@@ -3,9 +3,9 @@
 int main()
 {
 	Vector2 vecOne(4,20);
-	Vector2 vecTwo(2, 2);
-	Vector3 vecThree(3, 3, 3);
-	Vector3 vecFour(4, 5, 6);
-	vecOne.Normalise();
-	vecFour.Normalise();
+	Vector2 vecTwo(6,9);
+	Vector3 vecThree(10,4,10);
+	Vector3 vecFour(3,15,8);
+	vecOne.Dot(vecTwo);
+	vecThree.Cross(vecFour);
 }

@@ -18,19 +18,26 @@ Vector2 Vector2::operator-(Vector2 & other)
 	Vector2 V3 = { mX - other.mX,mY - other.mY };
 	return V3;
 }
-Vector2 Vector2::operator*(float other)
+Vector2 Vector2::operator*(float &other)
 {
 	Vector2 V3 = { mX*other,mY*other };
 	return V3;
 }
-
-Vector2 Vector2::Normalise()
+bool Vector2::operator==(Vector2 & other)
+{
+	return (mX == other.mX && mY == other.mY);
+}
+float Vector2::Dot(Vector2 & other)
+{
+	float scaler = { mX*other.mX + mY*other.mY };
+	return scaler;
+}
+Vector2 Vector2::Normalize()
 {
 	float mag = Magnitude();
 	Vector2 normalVector = { mX / mag,mY / mag };
 	return normalVector;
 }
-
 float Vector2::Magnitude()
 {
 	float mag = sqrt(mX*mX+mY*mY);
