@@ -30,7 +30,7 @@ bool Vector3::operator==(Vector3 & other)
 }
 float Vector3::Dot(Vector3 & other)
 {
-	float product = { mX*other.mX + mY*other.mY };
+	float product = { mX*other.mX + mY*other.mY + mZ*other.mZ };
 	return product;
 }
 Vector3 Vector3::Cross(Vector3 & other)
