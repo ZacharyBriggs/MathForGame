@@ -10,4 +10,6 @@ public:
 	Vector3 operator+(Vector3 &other);
 	Vector3 operator-(Vector3 &other);
 	Vector3 operator*(float other);
+	Vector3 Normalise();
+	float Magnitude();
 };
