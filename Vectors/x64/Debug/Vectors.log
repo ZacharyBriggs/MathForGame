@@ -1,3 +1,5 @@
 ﻿  Main.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(18): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(26): warning C4305: 'argument': truncation from 'double' to 'float'
   Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.exe
   Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.pdb (Partial PDB)
