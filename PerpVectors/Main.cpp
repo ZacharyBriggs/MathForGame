@@ -2,8 +2,9 @@
 #include <iostream>
 int main()
 {
-	Vector vecOne(4,5);
-	Vector vecTwo(5,4);
+	int thing[5] = { 1,2,3,4,5 };
+	Vector vecOne(0,1);
+	Vector vecTwo(1,0);
 	vecOne = vecOne.Normalize();
 	vecTwo = vecTwo.Normalize();
 	int perp = vecOne.Dot(vecTwo);

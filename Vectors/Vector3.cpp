@@ -52,3 +52,13 @@ float Vector3::Magnitude()
 	float mag = sqrt(mX*mX + mY*mY + mZ*mZ);
 	return mag;
 }
+std::istream & operator >> (std::istream & input, Vector3 & q)
+{
+	input >> q.mX >> q.mY >> q.mZ;
+	return input;
+}
+std::ostream & operator<<(std::ostream & output, const Vector3 & q)
+{
+	output << q.mX << "," << q.mY << "," << q.mZ;
+	return output;
+}

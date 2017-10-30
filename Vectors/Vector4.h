@@ -1,5 +1,6 @@
 #pragma once
 #include <math.h>
+#include <iostream>
 class Vector4
 {
 public:
@@ -16,4 +17,6 @@ public:
 	float Dot(Vector4 &other);
 	Vector4 Normalize();
 	float Magnitude();
+	friend std::istream& operator >> (std::istream & input, Vector4 &q);
+	friend std::ostream & operator<<(std::ostream & other, const Vector4 &q);
 };

@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 class Vector3
 {
 public:
@@ -15,4 +16,6 @@ public:
 	Vector3 Cross(Vector3 &other);
 	Vector3 Normalize();
 	float Magnitude();
+	friend std::istream& operator >> (std::istream & input, Vector3 &q);
+	friend std::ostream & operator<<(std::ostream & output, const Vector3 &q);
 };

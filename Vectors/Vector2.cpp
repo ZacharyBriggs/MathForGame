@@ -1,12 +1,9 @@
-#include "..\PerpendicularVectors\Vector2.h"
 #include "Vector2.h"
 #include <math.h>
 Vector2::Vector2()
 {
 }
-Vector2::Vector2(int x, int y)
-{
-}
+
 Vector2::Vector2(float x, float y)
 {
 	mX = x;
@@ -46,4 +43,14 @@ float Vector2::Magnitude()
 {
 	float mag = sqrt(mX*mX+mY*mY);
 	return mag;
+}
+std::istream & operator >> (std::istream & input, Vector2 & q)
+{
+	input >> q.mX >> q.mY;
+	return input;
+}
+std::ostream & operator<<(std::ostream & output, const Vector2 & q)
+{
+	output << q.mX << "," << q.mY;
+	return output;
 }

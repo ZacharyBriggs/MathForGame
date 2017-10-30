@@ -45,3 +45,15 @@ float Vector4::Magnitude()
 	float mag = sqrt(mX*mX + mY*mY + mZ*mZ + mW*mW);
 	return mag;
 }
+
+std::istream & operator >> (std::istream & input, Vector4 & q)
+{
+	input >> q.mX >> q.mY >> q.mZ >> q.mW;
+	return input;
+}
+
+std::ostream & operator<<(std::ostream & output, const Vector4 & q)
+{
+	output << q.mX << "," << q.mY << "," << q.mZ << "," << q.mW;
+	return output;
+}

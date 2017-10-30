@@ -1,6 +1,7 @@
 #include "Vector2.h"
 #include "Vector3.h"
 #include "Vector4.h"
+#include "Matrix2.h"
 #include <assert.h>
 int main()
 {
@@ -10,6 +11,15 @@ int main()
 	Vector3 vecFour(3, 15, 8);
 	Vector4 vecFive(1, 1, 1, 1);
 	Vector4 vecSix(2, 2, 2, 2);
+	float youFuck[] = { 1,0,0,1 };
+	Matrix2 a = Matrix2(youFuck);
+	float youFuck2[] = { 1,1,1,1 };
+	Matrix2 b = Matrix2(youFuck2);
+	Matrix2 c = a + b;
+	std::cin >> a;
+	std::cout << a;
+	std::cin >> vecOne;
+	std::cout << vecOne;
 	assert(vecOne + vecTwo == Vector2(10,29));
 	assert(vecOne - vecTwo == Vector2(-2,11));
 	assert((vecOne * 5) == Vector2(20,100));

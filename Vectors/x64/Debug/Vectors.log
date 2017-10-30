@@ -1,5 +1,7 @@
-﻿  Vector2.cpp
-c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\vector2.cpp(1): fatal error C1083: Cannot open include file: '..\PerpendicularVectors\Vector2.h': No such file or directory
+﻿  Matrix2.cpp
   Main.cpp
-c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(1): fatal error C1083: Cannot open include file: 'Vector2.h': No such file or directory
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(28): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(36): warning C4305: 'argument': truncation from 'double' to 'float'
   Generating Code...
+  Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.exe
+  Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.pdb (Partial PDB)
