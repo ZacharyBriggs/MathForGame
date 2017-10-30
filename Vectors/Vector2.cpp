@@ -1,6 +1,10 @@
+#include "..\PerpendicularVectors\Vector2.h"
 #include "Vector2.h"
 #include <math.h>
 Vector2::Vector2()
+{
+}
+Vector2::Vector2(int x, int y)
 {
 }
 Vector2::Vector2(float x, float y)

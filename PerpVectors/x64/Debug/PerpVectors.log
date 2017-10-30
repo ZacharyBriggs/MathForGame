@@ -1,0 +1,9 @@
+﻿  Vector.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\perpvectors\vector.cpp(19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\perpvectors\vector.cpp(30): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\perpvectors\vector.cpp(31): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  Main.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\perpvectors\main.cpp(9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  PerpVectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\PerpVectors.exe
+  PerpVectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\PerpVectors.pdb (Partial PDB)
