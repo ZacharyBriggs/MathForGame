@@ -1,5 +1,4 @@
 #include "Matrix2.h"
-
 Matrix2::Matrix2()
 {
 }
@@ -8,7 +7,7 @@ Matrix2::Matrix2(float mat[4])
 	for (int i = 0; i < 4; i++)
 		mMat[i] = mat[i];
 }
-Matrix2::Matrix2(float indexA, float indexB, float indexC, float indexD/*float indexE, float indexF, float indexG, float indexH, float indexI, float indexJ, float indexK, float indexL, float indexM, float indexN, float indexO, float indexP*/)
+Matrix2::Matrix2(float indexA, float indexB, float indexC, float indexD)
 {
 	mMat[0] = indexA;
 	mMat[1] = indexB;

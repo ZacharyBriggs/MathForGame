@@ -13,5 +13,4 @@ public:
 	Matrix4 operator*(int &other);
 	friend std::istream &operator >> (std::istream &input, Matrix4 &other);
 	friend std::ostream &operator << (std::ostream &input, Matrix4 &other);
-
 };

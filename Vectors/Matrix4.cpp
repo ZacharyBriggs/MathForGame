@@ -1,9 +1,7 @@
 #include "Matrix4.h"
-
 Matrix4::Matrix4()
 {
 }
-
 Matrix4::Matrix4(float mat[16])
 {
 	for (int i = 0; i < 16; i++)
@@ -28,7 +26,6 @@ Matrix4::Matrix4(float indexA, float indexB, float indexC, float indexD, float i
 	mMat[14] = indexO;
 	mMat[15] = indexP;
 }
-
 Matrix4 Matrix4::operator+(Matrix4 & other)
 {
 	Matrix4 newMat;
@@ -36,7 +33,6 @@ Matrix4 Matrix4::operator+(Matrix4 & other)
 		newMat.mMat[i] = mMat[i] + other.mMat[i];
 	return newMat;
 }
-
 Matrix4 Matrix4::operator-(Matrix4 & other)
 {
 	Matrix4 newMat;
@@ -44,7 +40,6 @@ Matrix4 Matrix4::operator-(Matrix4 & other)
 		newMat.mMat[i] = mMat[i] - other.mMat[i];
 	return newMat;
 }
-
 Matrix4 Matrix4::operator*(Matrix4 & other)
 {
 	Matrix4 newMat;
@@ -52,7 +47,6 @@ Matrix4 Matrix4::operator*(Matrix4 & other)
 		newMat.mMat[i] = mMat[i] * other.mMat[i];
 	return newMat;
 }
-
 Matrix4 Matrix4::operator*(int & other)
 {
 	Matrix4 newMat;
@@ -60,7 +54,6 @@ Matrix4 Matrix4::operator*(int & other)
 		newMat.mMat[i] = mMat[i] * other;
 	return newMat;
 }
-
 std::istream & operator >> (std::istream & input, Matrix4 & other)
 {
 	Matrix4 newMat;
@@ -68,7 +61,6 @@ std::istream & operator >> (std::istream & input, Matrix4 & other)
 		input >> other.mMat[i];
 	return input;
 }
-
 std::ostream & operator<<(std::ostream & output, Matrix4 & other)
 {
 	Matrix4 newMat;

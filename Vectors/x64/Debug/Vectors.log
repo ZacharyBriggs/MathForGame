@@ -1,6 +1,4 @@
 ﻿  Matrix4.cpp
-  Matrix3.cpp
-  Matrix2.cpp
-  Generating Code...
+Main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
   Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.exe
   Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.pdb (Partial PDB)
