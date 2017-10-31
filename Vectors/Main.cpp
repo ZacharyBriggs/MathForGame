@@ -2,6 +2,8 @@
 #include "Vector3.h"
 #include "Vector4.h"
 #include "Matrix2.h"
+#include "Matrix3.h"
+#include "Matrix4.h"
 #include <assert.h>
 int main()
 {
@@ -13,11 +15,13 @@ int main()
 	Vector4 vecSix(2, 2, 2, 2);
 	float youFuck[] = { 1,0,0,1 };
 	Matrix2 a = Matrix2(youFuck);
-	float youFuck2[] = { 1,1,1,1 };
-	Matrix2 b = Matrix2(youFuck2);
-	Matrix2 c = a + b;
-	std::cin >> a;
+	float youFuck2[] = { 1,1,1,1,1,1,1,1,1 };
+	float youFuck3[] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 };
+	Matrix3 b = Matrix3(youFuck2);
+	Matrix4 c = Matrix4(youFuck3);
 	std::cout << a;
+	std::cout << b;
+	std::cout << c;
 	std::cin >> vecOne;
 	std::cout << vecOne;
 	assert(vecOne + vecTwo == Vector2(10,29));

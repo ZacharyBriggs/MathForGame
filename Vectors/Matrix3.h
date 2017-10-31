@@ -2,6 +2,7 @@
 #include <iostream>
 class Matrix3
 {
+public:
 	float mMat[9];
 	Matrix3();
 	Matrix3(float mat[9]);
