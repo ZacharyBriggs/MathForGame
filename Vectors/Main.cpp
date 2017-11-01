@@ -17,6 +17,7 @@ int main()
 	float youFuckTwo[] = { 2,4,3,5 };
 	Matrix2 a = Matrix2(youFuck);
 	Matrix2 a2 = Matrix2(youFuckTwo);
+	a.RotateX(45);
 	a*a2;
 	float youFuck2[] = {2,3,7,5,8,9,1,2,10};
 	float youFuckThree[] = { 2,3,4,5,6,7,8,9,10 };

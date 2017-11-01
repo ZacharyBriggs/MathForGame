@@ -54,6 +54,6 @@ std::istream & operator >> (std::istream & input, Vector4 & q)
 
 std::ostream & operator<<(std::ostream & output, const Vector4 & q)
 {
-	output << q.mX << "," << q.mY << "," << q.mZ << "," << q.mW;
+	output << "<" << q.mX << "," << q.mY << "," << q.mZ << "," << q.mW << ">";
 	return output;
 }
