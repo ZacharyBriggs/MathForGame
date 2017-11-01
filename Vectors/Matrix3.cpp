@@ -36,8 +36,15 @@ Matrix3 Matrix3::operator-(Matrix3 & other)
 Matrix3 Matrix3::operator*(Matrix3 & other)
 {
 	Matrix3 newMat;
-	for (int i = 0; i < 9; i++)
-		newMat.mMat[i] = mMat[i] * other.mMat[i];
+	newMat.mMat[0] = (mMat[0] * other.mMat[0]) + (mMat[1] * other.mMat[3]) + (mMat[2] * other.mMat[6]);
+	newMat.mMat[1] = (mMat[0] * other.mMat[1]) + (mMat[1] * other.mMat[4]) + (mMat[2] * other.mMat[7]);
+	newMat.mMat[2] = (mMat[0] * other.mMat[2]) + (mMat[1] * other.mMat[5]) + (mMat[2] * other.mMat[8]);
+	newMat.mMat[3] = (mMat[3] * other.mMat[0]) + (mMat[4] * other.mMat[3]) + (mMat[5] * other.mMat[6]);
+	newMat.mMat[4] = (mMat[3] * other.mMat[1]) + (mMat[4] * other.mMat[4]) + (mMat[5] * other.mMat[7]);
+	newMat.mMat[5] = (mMat[3] * other.mMat[2]) + (mMat[4] * other.mMat[5]) + (mMat[5] * other.mMat[8]);
+	newMat.mMat[6] = (mMat[6] * other.mMat[0]) + (mMat[7] * other.mMat[3]) + (mMat[8] * other.mMat[6]);
+	newMat.mMat[7] = (mMat[6] * other.mMat[1]) + (mMat[7] * other.mMat[4]) + (mMat[8] * other.mMat[7]);
+	newMat.mMat[8] = (mMat[6] * other.mMat[2]) + (mMat[7] * other.mMat[5]) + (mMat[8] * other.mMat[8]);
 	return newMat;
 }
 Matrix3 Matrix3::operator*(int & other)
@@ -46,6 +53,18 @@ Matrix3 Matrix3::operator*(int & other)
 	for (int i = 0; i < 9; i++)
 		newMat.mMat[i] = mMat[i] * other;
 	return newMat;
+}
+Matrix3 Matrix3::RotateX(float angle)
+{
+	return Matrix3();
+}
+Matrix3 Matrix3::RotateY(float angle)
+{
+	return Matrix3();
+}
+Matrix3 Matrix3::RotateZ(float angle)
+{
+	return Matrix3();
 }
 std::istream & operator >> (std::istream & input, Matrix3 & other)
 {

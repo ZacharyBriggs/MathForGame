@@ -43,8 +43,25 @@ Matrix4 Matrix4::operator-(Matrix4 & other)
 Matrix4 Matrix4::operator*(Matrix4 & other)
 {
 	Matrix4 newMat;
-	for (int i = 0; i < 16; i++)
-		newMat.mMat[i] = mMat[i] * other.mMat[i];
+	newMat.mMat[0] = (mMat[0] * other.mMat[0]) + (mMat[1] * other.mMat[4]) + (mMat[2] * other.mMat[8]) + (mMat[3] * other.mMat[12]);
+	newMat.mMat[1] = (mMat[0] * other.mMat[1]) + (mMat[1] * other.mMat[5]) + (mMat[2] * other.mMat[9]) + (mMat[3] * other.mMat[13]);
+	newMat.mMat[2] = (mMat[0] * other.mMat[2]) + (mMat[1] * other.mMat[6]) + (mMat[2] * other.mMat[10]) + (mMat[3] * other.mMat[14]);
+	newMat.mMat[3] = (mMat[0] * other.mMat[3]) + (mMat[1] * other.mMat[7]) + (mMat[2] * other.mMat[11]) + (mMat[3] * other.mMat[15]);
+
+	newMat.mMat[4] = (mMat[4] * other.mMat[0]) + (mMat[5] * other.mMat[4]) + (mMat[6] * other.mMat[8]) + (mMat[7] * other.mMat[12]);
+	newMat.mMat[5] = (mMat[4] * other.mMat[1]) + (mMat[5] * other.mMat[5]) + (mMat[6] * other.mMat[9]) + (mMat[7] * other.mMat[13]);
+	newMat.mMat[6] = (mMat[4] * other.mMat[2]) + (mMat[5] * other.mMat[6]) + (mMat[6] * other.mMat[10]) + (mMat[7] * other.mMat[14]);
+	newMat.mMat[7] = (mMat[4] * other.mMat[3]) + (mMat[5] * other.mMat[7]) + (mMat[6] * other.mMat[11]) + (mMat[7] * other.mMat[15]);
+
+	newMat.mMat[8] = (mMat[8] * other.mMat[0]) + (mMat[9] * other.mMat[4]) + (mMat[10] * other.mMat[8]) + (mMat[11] * other.mMat[12]);
+	newMat.mMat[9] = (mMat[8] * other.mMat[1]) + (mMat[9] * other.mMat[5]) + (mMat[10] * other.mMat[9]) + (mMat[11] * other.mMat[13]);
+	newMat.mMat[10] = (mMat[8] * other.mMat[2]) + (mMat[9] * other.mMat[6]) + (mMat[10] * other.mMat[10]) + (mMat[11] * other.mMat[14]);
+	newMat.mMat[11] = (mMat[8] * other.mMat[3]) + (mMat[9] * other.mMat[7]) + (mMat[10] * other.mMat[11]) + (mMat[11] * other.mMat[15]);
+
+	newMat.mMat[12] = (mMat[12] * other.mMat[0]) + (mMat[13] * other.mMat[4]) + (mMat[14] * other.mMat[8]) + (mMat[15] * other.mMat[12]);
+	newMat.mMat[13] = (mMat[12] * other.mMat[1]) + (mMat[13] * other.mMat[5]) + (mMat[14] * other.mMat[9]) + (mMat[15] * other.mMat[13]);
+	newMat.mMat[14] = (mMat[12] * other.mMat[2]) + (mMat[13] * other.mMat[6]) + (mMat[14] * other.mMat[10]) + (mMat[15] * other.mMat[14]);
+	newMat.mMat[15] = (mMat[12] * other.mMat[3]) + (mMat[13] * other.mMat[7]) + (mMat[14] * other.mMat[11]) + (mMat[15] * other.mMat[15]);
 	return newMat;
 }
 Matrix4 Matrix4::operator*(int & other)
@@ -53,6 +70,18 @@ Matrix4 Matrix4::operator*(int & other)
 	for (int i = 0; i < 4; i++)
 		newMat.mMat[i] = mMat[i] * other;
 	return newMat;
+}
+Matrix4 Matrix4::RotateX(float angle)
+{
+	return Matrix4();
+}
+Matrix4 Matrix4::RotateY(float angle)
+{
+	return Matrix4();
+}
+Matrix4 Matrix4::RotateZ(float angle)
+{
+	return Matrix4();
 }
 std::istream & operator >> (std::istream & input, Matrix4 & other)
 {

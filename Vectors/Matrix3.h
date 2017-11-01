@@ -11,6 +11,9 @@ public:
 	Matrix3 operator-(Matrix3 &other);
 	Matrix3 operator*(Matrix3 &other);
 	Matrix3 operator*(int &other);
+	Matrix3 RotateX(float angle);
+	Matrix3 RotateY(float angle);
+	Matrix3 RotateZ(float angle);
 	friend std::istream& operator >> (std::istream &input, Matrix3 &other);
 	friend std::ostream& operator << (std::ostream &output, Matrix3 &other);
 };

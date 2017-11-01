@@ -31,8 +31,10 @@ Matrix2 Matrix2::operator-(Matrix2 &other)
 Matrix2 Matrix2::operator*(Matrix2 &other)
 {
 	Matrix2 newMat;
-	for (int i = 0; i < 4; i++)
-		newMat.mMat[i] = mMat[i] * other.mMat[i];
+	newMat.mMat[0] = (mMat[0] * other.mMat[0]) + (mMat[1] * other.mMat[2]);
+	newMat.mMat[1] = (mMat[0] * other.mMat[1]) + (mMat[1] * other.mMat[3]);
+	newMat.mMat[2] = (mMat[2] * other.mMat[0]) + (mMat[3] * other.mMat[2]);
+	newMat.mMat[3] = (mMat[2] * other.mMat[1]) + (mMat[3] * other.mMat[3]);
 	return newMat;
 }
 Matrix2 Matrix2::operator*(int & other)
@@ -41,6 +43,18 @@ Matrix2 Matrix2::operator*(int & other)
 	for (int i = 0; i < 4; i++)
 		newMat.mMat[i] = mMat[i] * other;
 	return newMat;
+}
+Matrix2 Matrix2::RotateX(float angle)
+{
+	return Matrix2();
+}
+Matrix2 Matrix2::RotateY(float angle)
+{
+	return Matrix2();
+}
+Matrix2 Matrix2::RotateZ(float angle)
+{
+	return Matrix2();
 }
 std::istream & operator >> (std::istream & input, Matrix2 & other)
 {
