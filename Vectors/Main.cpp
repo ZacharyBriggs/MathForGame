@@ -31,7 +31,8 @@ int main()
 	c*c2;
 	std::cout << a;
 	std::cout << b;
-	std::cout << c;
+	std::cout << c << std::endl;
+	std::cout << "Input a vector.\n";
 	std::cin >> vecOne;
 	std::cout << vecOne;
 	assert(vecOne + vecTwo == Vector2(10,29));
