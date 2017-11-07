@@ -1,1 +1,17 @@
-﻿
+﻿  Vector4.cpp
+  Vector3.cpp
+  Vector2.cpp
+  Matrix4.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix4.cpp(76): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix4.cpp(83): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix4.cpp(90): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Matrix3.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix3.cpp(59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix3.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix3.cpp(73): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Matrix2.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix2.cpp(50): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix2.cpp(57): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Main.cpp
+  Generating Code...
+  Vectors.vcxproj -> C:\Users\s178020\Documents\Visual Studio 2015\Projects\MathForGame\Debug\Vectors.lib

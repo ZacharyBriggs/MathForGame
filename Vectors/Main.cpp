@@ -7,33 +7,40 @@
 #include <assert.h>
 int main()
 {
-	Vector2 vecOne(4, 20);
+	/*Vector2 vecOne(4, 20);
 	Vector2 vecTwo(6, 9);
 	Vector3 vecThree(10, 4, 10);
 	Vector3 vecFour(3, 15, 8);
 	Vector4 vecFive(1, 1, 1, 1);
-	Vector4 vecSix(2, 2, 2, 2);
+	Vector4 vecSix(2, 2, 2, 2);*/
 	float youFuck[] = {3,5,2,1};
 	float youFuckTwo[] = { 2,4,3,5 };
 	Matrix2 a = Matrix2(youFuck);
 	Matrix2 a2 = Matrix2(youFuckTwo);
 	a.RotateX(45);
+	a.RotateY(45);
 	a*a2;
 	float youFuck2[] = {2,3,7,5,8,9,1,2,10};
 	float youFuckThree[] = { 2,3,4,5,6,7,8,9,10 };
 	Matrix3 b = Matrix3(youFuck2);
 	Matrix3 b2 = Matrix3(youFuckThree);
+	b.RotateX(45);
+	b.RotateY(45);
+	b.RotateZ(45);
 	b*b2;
 	float youFuck3[] = {1,2,6,8,2,5,4,7,7,9,3,4,3,8,5,1};
 	float youFuck4[] = {2,4,1,3,6,5,3,9,4,2,5,4,1,6,2,8};
 	Matrix4 c = Matrix4(youFuck3);
+	c.RotateX(45);
+	c.RotateY(45);
+	c.RotateZ(45);
 	Matrix4 c2 = Matrix4(youFuck4);
 	c*c2;
 	std::cout << a;
 	std::cout << b;
 	std::cout << c << std::endl;
 	std::cout << "Input a vector.\n";
-	std::cin >> vecOne;
+	/*std::cin >> vecOne;
 	std::cout << vecOne;
 	assert(vecOne + vecTwo == Vector2(10,29));
 	assert(vecOne - vecTwo == Vector2(-2,11));
@@ -56,5 +63,5 @@ int main()
 	assert(vecFive == vecSix == false);
 	assert(vecFive.Dot(vecSix) == 8);
 	assert(vecFive.Normalize() == Vector4(0.5,0.5,0.5,0.5));
-	assert(vecFive.Magnitude() == 2);
+	assert(vecFive.Magnitude() == 2);*/
 }

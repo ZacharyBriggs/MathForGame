@@ -73,15 +73,24 @@ Matrix4 Matrix4::operator*(int & other)
 }
 Matrix4 Matrix4::RotateX(float angle)
 {
-	return Matrix4();
+	float rad = (angle * 3.141592) / 180;
+	Matrix4* rotation = new Matrix4(1,0,0,0,0,1, 0, 0,0,0, cos(rad), sin(-rad), 0,0, sin(rad), cos(rad));
+	Matrix4 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 Matrix4 Matrix4::RotateY(float angle)
 {
-	return Matrix4();
+	float rad = (angle * 3.141592) / 180;
+	Matrix4* rotation = new Matrix4(1,0,0,0,0,cos(rad), 0, sin(rad),0, 0, 1, 0,0, sin(-rad), 0, cos(rad));
+	Matrix4 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 Matrix4 Matrix4::RotateZ(float angle)
 {
-	return Matrix4();
+	float rad = (angle * 3.141592) / 180;
+	Matrix4* rotation = new Matrix4(1,0,0,0,0,cos(rad), sin(-rad), 0,0, sin(rad), cos(rad), 0,0, 0, 0, 1);
+	Matrix4 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 std::istream & operator >> (std::istream & input, Matrix4 & other)
 {

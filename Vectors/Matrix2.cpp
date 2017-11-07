@@ -56,12 +56,8 @@ Matrix2 Matrix2::RotateY(float angle)
 {
 	float rad =(angle * 3.14) / 180;
 	Matrix2* rotation = new Matrix2(cos(rad), sin(rad), -sin(rad), cos(rad));
-	*rotation;
-	return Matrix2();
-}
-Matrix2 Matrix2::RotateZ(float angle)
-{
-	return Matrix2();
+	Matrix2 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 std::istream & operator >> (std::istream & input, Matrix2 & other)
 {

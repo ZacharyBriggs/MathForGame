@@ -56,15 +56,24 @@ Matrix3 Matrix3::operator*(int & other)
 }
 Matrix3 Matrix3::RotateX(float angle)
 {
-	return Matrix3();
+	float rad = (angle * 3.141592) / 180;
+	Matrix3* rotation = new Matrix3(1,0,0,0,cos(rad), sin(-rad),0, sin(rad), cos(rad));
+	Matrix3 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 Matrix3 Matrix3::RotateY(float angle)
 {
-	return Matrix3();
+	float rad = (angle * 3.141592) / 180;
+	Matrix3* rotation = new Matrix3(cos(rad),0, sin(rad), 0,1,0, sin(-rad),0, cos(rad));
+	Matrix3 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 Matrix3 Matrix3::RotateZ(float angle)
 {
-	return Matrix3();
+	float rad = (angle * 3.141592) / 180;
+	Matrix3* rotation = new Matrix3(cos(rad), sin(-rad), 0, sin(rad), cos(rad), 0, 0, 0, 1);
+	Matrix3 rotatedMat = *this * *rotation;
+	return rotatedMat;
 }
 std::istream & operator >> (std::istream & input, Matrix3 & other)
 {

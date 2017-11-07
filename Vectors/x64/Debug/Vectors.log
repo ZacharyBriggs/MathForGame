@@ -1,5 +1,16 @@
-﻿  Matrix2.cpp
+﻿  Vector4.cpp
+  Vector3.cpp
+  Vector2.cpp
+  Matrix4.cpp
+  Matrix3.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix3.cpp(59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix3.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix3.cpp(73): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Matrix2.cpp
 c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix2.cpp(50): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\matrix2.cpp(57): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.exe
-  Vectors.vcxproj -> C:\Users\s178020\documents\visual studio 2015\Projects\MathForGame\x64\Debug\Vectors.pdb (Partial PDB)
+  Main.cpp
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(47): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\s178020\documents\visual studio 2015\projects\mathforgame\vectors\main.cpp(55): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+  Vectors.vcxproj -> C:\Users\s178020\Documents\Visual Studio 2015\Projects\MathForGame\x64\Debug\Vectors.lib
