@@ -7,12 +7,12 @@
 #include <assert.h>
 int main()
 {
-	/*Vector2 vecOne(4, 20);
+	Vector2 vecOne(4, 20);
 	Vector2 vecTwo(6, 9);
 	Vector3 vecThree(10, 4, 10);
 	Vector3 vecFour(3, 15, 8);
 	Vector4 vecFive(1, 1, 1, 1);
-	Vector4 vecSix(2, 2, 2, 2);*/
+	Vector4 vecSix(2, 2, 2, 2);
 	float youFuck[] = {3,5,2,1};
 	float youFuckTwo[] = { 2,4,3,5 };
 	Matrix2 a = Matrix2(youFuck);
@@ -40,7 +40,7 @@ int main()
 	std::cout << b;
 	std::cout << c << std::endl;
 	std::cout << "Input a vector.\n";
-	/*std::cin >> vecOne;
+	std::cin >> vecOne;
 	std::cout << vecOne;
 	assert(vecOne + vecTwo == Vector2(10,29));
 	assert(vecOne - vecTwo == Vector2(-2,11));
@@ -63,5 +63,5 @@ int main()
 	assert(vecFive == vecSix == false);
 	assert(vecFive.Dot(vecSix) == 8);
 	assert(vecFive.Normalize() == Vector4(0.5,0.5,0.5,0.5));
-	assert(vecFive.Magnitude() == 2);*/
+	assert(vecFive.Magnitude() == 2);
 }
